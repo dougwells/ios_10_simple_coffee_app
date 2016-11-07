@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ROs-KK-dee">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CoffeeApp" translatesAutoresizingMaskIntoConstraints="NO" id="wp2-Zo-RG2">
+                                <rect key="frame" x="47" y="5" width="265" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Many Cups of Coffee?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqU-qH-jo9">
+                                <rect key="frame" x="83" y="120" width="209" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example: 3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="my2-iD-tgn">
+                                <rect key="frame" x="140.5" y="161" width="93" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Cost ... " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkT-VI-LWq">
+                                <rect key="frame" x="123" y="205" width="128" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1.95" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fax-TF-KOE">
+                                <rect key="frame" x="134" y="222" width="107" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="n4X-O4-UOl"/>
+                                    <constraint firstAttribute="height" constant="62" id="nMj-v8-ixd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cr-SZ-S42">
+                                <rect key="frame" x="92" y="283" width="190" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="40c-pV-BXB"/>
+                                    <constraint firstAttribute="height" constant="53" id="pai-WC-sej"/>
+                                </constraints>
+                                <state key="normal" image="calculate"/>
+                                <connections>
+                                    <action selector="calcPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RkK-wi-2O0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fax-TF-KOE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0pE-p0-AN1"/>
+                            <constraint firstItem="5cr-SZ-S42" firstAttribute="top" secondItem="DkT-VI-LWq" secondAttribute="bottom" constant="54" id="1j6-qP-3SC"/>
+                            <constraint firstItem="lqU-qH-jo9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="4Go-ZF-c0P"/>
+                            <constraint firstItem="DkT-VI-LWq" firstAttribute="centerX" secondItem="my2-iD-tgn" secondAttribute="centerX" id="5dk-PE-W4c"/>
+                            <constraint firstItem="DkT-VI-LWq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="107" id="7Pn-4O-2fE"/>
+                            <constraint firstItem="5cr-SZ-S42" firstAttribute="centerX" secondItem="fax-TF-KOE" secondAttribute="centerX" id="C8u-Wu-Uus"/>
+                            <constraint firstItem="lqU-qH-jo9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="EZI-9b-qM6"/>
+                            <constraint firstItem="DkT-VI-LWq" firstAttribute="centerX" secondItem="ROs-KK-dee" secondAttribute="centerX" id="Ukl-bO-XhJ"/>
+                            <constraint firstItem="fax-TF-KOE" firstAttribute="top" secondItem="DkT-VI-LWq" secondAttribute="bottom" constant="-7" id="bOg-xP-DaU"/>
+                            <constraint firstItem="ROs-KK-dee" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="gKX-ex-f89"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DkT-VI-LWq" secondAttribute="bottom" constant="438" id="jDd-Vr-Wlf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lqU-qH-jo9" secondAttribute="trailing" constant="67" id="mTb-0h-R5l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DkT-VI-LWq" secondAttribute="trailing" constant="108" id="uYy-E3-tlJ"/>
+                            <constraint firstItem="DkT-VI-LWq" firstAttribute="top" secondItem="my2-iD-tgn" secondAttribute="bottom" constant="14" id="ulb-SV-1lm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numCups" destination="my2-iD-tgn" id="ft0-9C-WD1"/>
+                        <outlet property="totCost" destination="fax-TF-KOE" id="fF7-wP-ca8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559.20000000000005" y="61.619190404797607"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CoffeeApp" width="313" height="56"/>
+        <image name="bg" width="375" height="667"/>
+        <image name="calculate" width="182" height="53"/>
+    </resources>
+</document>
