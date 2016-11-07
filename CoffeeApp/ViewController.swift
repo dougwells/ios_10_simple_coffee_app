@@ -23,6 +23,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func calcPressed(_ sender: Any) {
+        if numCups.text != "" {
+            let totCups = Double(numCups.text!)
+            let totCostNum = totCups! * 1.95
+            let totCostString = String(format: "$%.2f", totCostNum)
+            totCost.text = totCostString
+        }
     }
 
 }
